@@ -12,8 +12,10 @@ btn.addEventListener("click", () => { //strzałka fat arrow
     console.log("działa");
     fontSize++;
     for (let i = 0; i<liItems.length; i++){
-        if (liItems[i])
+        if (liItems[i].style.display === ""){
+            console.log("dodałem block");
         liItems[i].style.display = "block";
+        }
         liItems[i].style.fontSize = `${fontSize}px`;
         
     }
